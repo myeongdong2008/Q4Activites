@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	<title>Q4 Seatwork #2</title>
+<style type="text/css">
+h2{
+	font-family: Pacifico;
+	text-align: center;
+	color: darkblue;
+}
+
+p{
+	font-family: Pacifico;
+	text-align: center;
+}
+
+body{
+	background-color: #F5F5DC;
+}
+
+form{
+	text-align: center;
+	font-family: Fjalla One;
+
+}
+</style>
+
+<body>
+	<div class="container">
+	<h2>Fahrenheit to Celsius</h2>
+	<p id='date'></p>
+
+	<center><img src="https://sciencenotes.org/wp-content/uploads/2020/08/Absolute-Zero-1024x683.jpg" height=300 width=400></center>
+
+	<form>
+		<br>Fahrenheit <input type="text" id="num1" size="10" class="btn-block"><br><br>
+		<input type="Submit" value="CALCULATE" onclick="Calculate()" class="btn btn-primary btn-block"><br>
+		<input type="Reset" value="CANCEL" class="btn btn-secondary btn-block container">
+	</form><br>
+
+	<script type="text/javascript">
+		const DT = new Date();//constant declaration for date object
+		document.getElementById('date').innerHTML = DT
+
+		function Calculate(){
+			let num1 = document.getElementById('num1').value;
+
+			let difference = (num1 - 32) * 5/9;
+			alert("The value in Celsius is : " + difference);
+		}
+	
+	</script>
+</div>
+
+</body>
+</head>
+</html>
